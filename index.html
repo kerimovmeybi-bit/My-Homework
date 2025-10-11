@@ -5,71 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
 </head>
 
-<body class="container">
-    <header class="header-cards">
-        <div class="plant-card">
-            <img src="./images/image_1.png" alt="plant.png" class="plants">
-            <div class="plant-info">
-                <h2>Summer cactus <br>& succulents</h2>
-                <p>We are an online plant shop offering a wide<br>range of cheap and trendy plants</p>
-                <button class="btn"> Find More → </button>
-            </div>
-            <div class="plant-card"></div>
-            <img src="./images/image_2.png" alt="plant.png" class="plants">
-            <div class="plant-info">
-                <h2>Styling Trends <br>& much more</h2>
-                <p>We are an online plant shop offering a wide<br>range of cheap and trendy plants</p>
-                <button class="btn"> Find More → </button>
-            </div>
+<body>
+    <header class="nav-menu">
+        <a href="#" target="_blank" class="nav-link">All Plants</a>
+        <a href="#" target="_blank" class="nav-link">New Arrivals</a>
+        <a href="#" target="_blank" class="nav-link">Sale</a>
+        <div class="sort-box">
+            <label for="sort">Short by:</label>
+            <select id="sort" name="sort">
+                <option value="default">Default sorting</option>
+                <option value="price">Price</option>
+                <option value="name">Name</option>
+                <option value="rating">Rating</option>
+            </select>
         </div>
     </header>
     <main>
-        <div class="blog-section">
-            <h1>Our Blog Posts</h1>
-            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+        <div class="cards-wrap">
+            <div class="card-item">
+                <a href="#" target="_blank">
+                    <img src="./images/image_1.png" alt="image.png" class="card-img">
+                </a>
+                <div class="icons">
+                    <a href="#" target="_blank">
+                        <img src="./images/shopping.png" alt="shopping">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/heart.png" alt="heart">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/Vector.png" alt="Vector">
+                    </a>
+                </div>
+                <p class="card-title">Barberton Daisy</p>
+                <h4 class="how-much">$119.00</h4>
+            </div>
+            <div class="card-item">
+                <a href="#" target="_blank">
+                    <img src="./images/image_2.png" alt="image.png" class="card-img">
+                </a>
+                <div class="icons">
+                    <a href="#" target="_blank">
+                        <img src="./images/shopping.png" alt="shopping">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/heart.png" alt="heart">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/Vector.png" alt="Vector">
+                    </a>
+                </div>
+                <p class="card-title">Angel Wing Begonia</p>
+                <h4 class="how-much">$169.00</h4>
+            </div>
+            <div class="card-item">
+                <button class="btn" type="button">
+                    <p class="discount">13% OFF</p>
+                </button>
+                <a href="#" target="_blank">
+                    <img src="./images/image_3.png" alt="image.png" class="card-img">
+                </a>
+                <div class="icons">
+                    <a href="#" target="_blank">
+                        <img src="./images/shopping.png" alt="shopping">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/heart.png" alt="heart">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/Vector.png" alt="Vector">
+                    </a>
+                </div>
+                <p class="card-title">African Violet</p>
+                <h4 class="how-much">$119.00</h4>
+                <h4 class="old-price">$229.00</h4>
+            </div>
         </div>
-        <div class="blog">
-            <div class="blog-container">
-                <img src="./images/03_image.png" alt="plant.png" class="blog-cards">
-                <div class="blog-info">
-                    <p class="date-time">September 12 I Read in 6 minutes</p>
-                    <h2>Cactus & Succulent<br>Care Tips</h2>
-                    <p class="info">Cacti are succulents are easy care plants for any home or patio.</p>
-                    <a href="#" target="_blank" class="link">Read More →</a>
-                </div>
-            </div>
-            <div class="blog-container">
-                <img src="./images/04_image.png" alt="plant.png" class="blog-cards">
-                <div class="blog-info">
-                    <p class="date-time">September 13 I Read in 2 minutes</p>
-                    <h2>Top 10 Succulents for <br>Your Home</h2>
-                    <p class="info">Best in hanging baskets. Prefers medium to high light.</p>
-                    <a href="#" target="_blank" class="link">Read More →</a>
-                </div>
-            </div>
-            <div class="blog-container">
-                <img src="./images/05_image.png" alt="plant.png" class="blog-cards">
-                <div class="blog-info">
-                    <p class="date-time">September 15 I Read in 3 minutes</p>
-                    <h2>Cacti & Succulent<br>Care Tips</h2>
-                    <p class="info">Cacti and succulents thrive in containers and because most are..</p>
-                    <a href="#" target="_blank" class="link">Read More →</a>
-                </div>
-            </div>
-            <div class="blog-container">
-                <img src="./images/06_image.png" alt="plant.png" class="blog-cards">
-                <div class="blog-info">
-                    <p class="date-time">September 15 I Read in 2 minutes</p>
-                    <h2>Best Houseplants<br>Room by Room</h2>
-                    <p class="info">The benefits of houseplants are endless. In addition to..</p>
-                    <a href="#" target="_blank" class="link">Read More →</a>
-                </div>
-            </div>
-        </div>
+
+
+
     </main>
 </body>
 
