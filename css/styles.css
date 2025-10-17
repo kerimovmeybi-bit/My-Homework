@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    white-space: nowrap;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    margin-top: 25px;
+    border-bottom: 0.3px solid #46A35880;
+}
+
+.logo {
+    width: 150px;
+    height: 34.3px;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    gap: 47px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    position: relative;
+    border-bottom: 3px solid transparent;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #3D3D3D;
+    display: block;
+    padding: 18px 15px;
+    transition: all 0.3s ease;
+    font-family: 'Cera Pro';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.menu-item:hover {
+    border-bottom: 3px solid #46A358;
+}
+
+.child-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #F4FAF4;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 180px;
+    border-left: 2px solid #46A358;
+    z-index: 10;
+}
+
+.parent:hover>.child-menu {
+    display: block;
+}
+
+.child-menu .menu-item a {
+    padding: 10px 15px;
+    color: #3D3D3D;
+    text-decoration: none;
+    display: block;
+    transition: background 0.5s ease;
+}
+
+.child-menu .menu-item a:hover {
+    background-color: #E1F2E1;
+    color: #000;
+}
+
+.main-menu>.parent>.child-menu {
+    left: 0;
+    top: 100%;
+}
+
+.parent:hover {
+    background-color: #1A712A;
+}
+
+.login {
+    width: 20px;
+    height: 20px;
+}
+
+.my-btn {
+    display: flex;
+    width: 100px;
+    height: 35px;
+    background-color: #46A358;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Cera Pro;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.my-btn a {
+    color: #FFFFFF;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F580;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.text {
+    padding-left: 40px;
+}
+
+.title {
+    font-family: 'Cera Pro';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    color: #3D3D3D;
+}
+
+.highlight {
+    color: #46A358;
+}
+
+.text h1 {
+    font-family: 'Cera Pro';
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #3D3D3D;
+}
+
+.content {
+    font-family: 'Cera Pro';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #727272;
+}
+
+.click {
+    display: flex;
+    padding-top: 44px;
+}
+
+.my-btn {
+    width: 140px;
+    height: 40px;
+}
+
+.image {
+    display: flex;
+    position: relative;
+}
+
+.big-plant {
+    display: flex;
+    width: 507px;
+    height: 450px;
+}
+
+.small-plant {
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    bottom: 17px;
+    left: 64px;
+}

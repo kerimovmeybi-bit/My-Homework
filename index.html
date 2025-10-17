@@ -4,90 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <title>GreenShop</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./fronts/stylesheet.css">
 </head>
 
 <body>
-    <header class="nav-menu">
-        <a href="#" target="_blank" class="nav-link">All Plants</a>
-        <a href="#" target="_blank" class="nav-link">New Arrivals</a>
-        <a href="#" target="_blank" class="nav-link">Sale</a>
-        <div class="sort-box">
-            <label for="sort">Short by:</label>
-            <select id="sort" name="sort">
-                <option value="default">Default sorting</option>
-                <option value="price">Price</option>
-                <option value="name">Name</option>
-                <option value="rating">Rating</option>
-            </select>
+    <header>
+        <div class="container">
+            <img src="./images/Logo.png" alt="logo" class="logo">
+            <ul class="main-menu">
+                <li class="menu-item">
+                    <a href="#Home" target="_blank">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#Shop" target="_blank">Shop</a>
+                </li>
+                <li class="menu-item parent">
+                    <a href="#Plant Care" target="_blank">Plant Care</a>
+                    <ul class="child-menu">
+                        <li class="menu-item">
+                            <a href="#Drainage">Drainage</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#Fungicides">Fungicides</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#Fertilizer">Fertilizer</a>
+                        </li>
+                        <li class="menu-item parent">
+                            <a href="#Priming">Priming</a>
+                            <ul class="child-menu">
+                                <li class="menu-item"><a href="#">Universal</a></li>
+                                <li class="menu-item"><a href="#">For Ficus</a></li>
+                                <li class="menu-item"><a href="#">For Cacti</a></li>
+                                <li class="menu-item"><a href="#">For Citrus</a></li>
+                                <li class="menu-item"><a href="#">For those in bloom</a></li>
+                                <li class="menu-item"><a href="#">For Orchids</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#Blogs" target="_blank">Blogs</a>
+                </li>
+            </ul>
+            <button class="my-btn" type="submit">
+                <img src="./images/Logout.png" alt="login" class="login">
+                <a href="#" target="_blank">Login </a>
+            </button>
         </div>
     </header>
     <main>
-        <div class="cards-wrap">
-            <div class="card-item">
-                <a href="#" target="_blank">
-                    <img src="./images/image_1.png" alt="image.png" class="card-img">
-                </a>
-                <div class="icons">
-                    <a href="#" target="_blank">
-                        <img src="./images/shopping.png" alt="shopping">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="./images/heart.png" alt="heart">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="./images/Vector.png" alt="Vector">
-                    </a>
+        <div class="wrapper">
+            <div class="text">
+                <p class="title">Welcome to GreenShop</p>
+                <h1>Let’s Make a<br>
+                    Better <span class="highlight"> Planet</span>
+                </h1>
+                <p class="content">
+                    We are an online plant shop offering a wide range of cheap and trendy plants. Use<br>our plants to
+                    create an unique Urban Jungle. Order your favorite plants!
+                </p>
+                <div class="click">
+                    <button class="my-btn">
+                        <a href="#" target="_blank">SHOP NOW</a>
+                    </button>
                 </div>
-                <p class="card-title">Barberton Daisy</p>
-                <h4 class="how-much">$119.00</h4>
             </div>
-            <div class="card-item">
-                <a href="#" target="_blank">
-                    <img src="./images/image_2.png" alt="image.png" class="card-img">
-                </a>
-                <div class="icons">
-                    <a href="#" target="_blank">
-                        <img src="./images/shopping.png" alt="shopping">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="./images/heart.png" alt="heart">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="./images/Vector.png" alt="Vector">
-                    </a>
-                </div>
-                <p class="card-title">Angel Wing Begonia</p>
-                <h4 class="how-much">$169.00</h4>
-            </div>
-            <div class="card-item">
-                <button class="btn" type="button">
-                    <p class="discount">13% OFF</p>
-                </button>
-                <a href="#" target="_blank">
-                    <img src="./images/image_3.png" alt="image.png" class="card-img">
-                </a>
-                <div class="icons">
-                    <a href="#" target="_blank">
-                        <img src="./images/shopping.png" alt="shopping">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="./images/heart.png" alt="heart">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="./images/Vector.png" alt="Vector">
-                    </a>
-                </div>
-                <p class="card-title">African Violet</p>
-                <h4 class="how-much">$119.00</h4>
-                <h4 class="old-price">$229.00</h4>
+            <div class="image">
+                <img src="./images/01.png" alt="plant" class="big-plant">
+                <img src="./images/02.png" alt="plant" class="small-plant">
             </div>
         </div>
-
-
-
     </main>
 </body>
 
