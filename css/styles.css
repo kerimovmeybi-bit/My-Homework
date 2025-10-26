@@ -15,6 +15,36 @@ a {
 }
 
 
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+
+.preloader-logo {
+    width: 120px;
+
+    height: auto;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -445,10 +475,6 @@ a {
     transition: border-color 0.3s ease;
 }
 
-.sort-box select:hover {
-    border-color: rgba(0, 0, 0, 0.4);
-}
-
 .cards-wrap {
     max-width: 840px;
     width: 100%;
@@ -574,6 +600,7 @@ a {
     background: #46A358;
     border: none;
     position: relative;
+    cursor: pointer;
 }
 
 .number-one {
@@ -595,6 +622,11 @@ a {
     border-radius: 4px;
     border: 1px solid #E5E5E5;
     position: relative;
+    cursor: pointer;
+}
+
+.page:hover {
+    background-color: #ccc6c6;
 }
 
 .number {
@@ -615,7 +647,7 @@ a {
 }
 
 .container-three {
-    max-width: 1205px;
+    max-width: 1200px;
     width: 100%;
     opacity: 1;
     display: flex;
@@ -639,6 +671,11 @@ a {
     mix-blend-mode: Multiply;
     position: absolute;
     bottom: 0px;
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.card-image2:hover {
+    transform: scale(1.1);
 }
 
 .plant-info {
@@ -703,7 +740,7 @@ a {
 .blog {
     display: flex;
     gap: 44px;
-    max-width: 1205px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -755,7 +792,7 @@ a {
 }
 
 .container-four {
-    max-width: 1205px;
+    max-width: 1200px;
     width: 100%;
     height: 250px;
     background-color: #FBFBFB;
@@ -848,7 +885,7 @@ a {
 }
 
 .address {
-    max-width: 1205px;
+    max-width: 1200px;
     width: 100%;
     height: 88px;
     display: flex;
@@ -871,6 +908,23 @@ a {
 .icon-banner {
     width: 20px;
     padding-right: 9px;
+    cursor: pointer;
+    transition: fill 0.3s ease, transform 0.3s ease;
+    animation: pulse 1.5s ease-in-out infinite;
+    transform-origin: center;
+}
+
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
 }
 
 .text-banner {
@@ -951,7 +1005,13 @@ a {
 .icon-media {
     width: 30px;
     padding-top: 15px;
+    transition: fill 0.3s ease, transform 0.3s ease;
 }
+
+.icon-media:hover {
+    transform: scale(1.1);
+}
+
 
 .title-media-two {
     color: #3D3D3D;
